@@ -1,5 +1,4 @@
 import React from "react";
-
 import dataFromExcel from "../data/dataFromExcel";
 import BarChartRechart from "../components/BarChartRechart";
 
@@ -9,6 +8,7 @@ class Home extends React.Component {
     this.state = {
       names: [],
       show: false,
+      average: [],
     };
   }
 
@@ -19,7 +19,6 @@ class Home extends React.Component {
   filterNames = () => {
     const names = [];
     dataFromExcel.forEach((item) => {
-      console.log(item);
       if (!names.includes(item.studentName)) names.push(item.studentName);
     });
     this.setState({
@@ -31,7 +30,6 @@ class Home extends React.Component {
   render() {
     return this.state.show ? (
       <div className="App">
-        <h1>Opdrachtje</h1>
         {this.state.names.map((name) => {
           return (
             <>
