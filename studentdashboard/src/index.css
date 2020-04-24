@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   align-content: center;
+  background-color: #4e8ac9;
 }
 
 code {
@@ -21,12 +22,35 @@ code {
   margin-right: 1rem;
   border: 1px solid gray;
   border-radius: 3px;
-  background-color: lightblue;
+  background-color: #ecba1d;
+  box-shadow: inset 0 0 0 0 #65c1c3;
+  transition: ease-out 3s;
+}
+
+.student-button a:hover {
+  box-shadow: inset 400px 0 0 0 #65c1c3;
 }
 
 .navbar {
   text-align: center;
 }
 
-.navbar :last-child {
+.header img {
+  opacity: 50%;
+}
+
+.header img:hover {
+  opacity: 100%;
+  -webkit-filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 75%));
+}
+
+.header h2 {
+  color: white;
+  text-align: center;
+}
+
+.studentname h1 {
+  text-align: center;
+  color: white;
+  font-size: 25pt;
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import WAlogo from "../images/WAlogo.jpg";
+import WAlogo from "../images/WAlogo.png";
 
 const Header = () => {
   return (
-    <div align="center">
+    <div className="header" align="center">
       <Link to="/">
         <img src={WAlogo} width="30%" />
       </Link>
-      <h2 align="center">Class of March 2020</h2>
+      <h2>Class of March 2020</h2>
     </div>
   );
 };
